@@ -8,7 +8,7 @@ final class Hello {
 
 /*
 % javac -version
-javac 1.6.0_24
+javac 1.7.0_65
 */
 
 /*
