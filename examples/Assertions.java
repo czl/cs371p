@@ -29,6 +29,9 @@ final class Assertions {
 
 /*
 % javac -Xlint Assertions.java
+
+
+
 % java  -ea    Assertions
 Assertions.java
 Exception in thread "main" java.lang.AssertionError
