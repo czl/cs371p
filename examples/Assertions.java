@@ -3,9 +3,7 @@
 // ---------------
 
 /*
-Turn ON assertions at run time with -ea.
-% javac -Xlint Assertions.java
-% java  -ea    Assertions
+http://docs.oracle.com/javase/7/docs/technotes/guides/language/assert.html
 */
 
 final class Assertions {
@@ -30,8 +28,16 @@ final class Assertions {
         System.out.println("Done.");}}
 
 /*
+% javac -Xlint Assertions.java
+% java  -ea    Assertions
 Assertions.java
 Exception in thread "main" java.lang.AssertionError
     at Assertions.cycle_length(Assertions.java:21)
     at Assertions.main(Assertions.java:27)
+
+
+
+% java Assertions
+Assertions.java
+Done.
 */
