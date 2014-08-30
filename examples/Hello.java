@@ -9,9 +9,9 @@ final class Hello {
 /*
 % javac -version
 javac 1.7.0_65
-*/
 
-/*
+
+
 % javac -Xlint Hello.java
 % java  -ea    Hello
 Nothing to be done.

@@ -1,0 +1,310 @@
+==14225== Memcheck, a memory error detector
+==14225== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==14225== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==14225== Command: TestCollatz
+==14225==
+Running main() from gtest_main.cc
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from Collatz
+[ RUN      ] Collatz.read
+[       OK ] Collatz.read (31 ms)
+[ RUN      ] Collatz.eval_1
+[       OK ] Collatz.eval_1 (5 ms)
+[ RUN      ] Collatz.eval_2
+[       OK ] Collatz.eval_2 (3 ms)
+[ RUN      ] Collatz.eval_3
+[       OK ] Collatz.eval_3 (3 ms)
+[ RUN      ] Collatz.eval_4
+[       OK ] Collatz.eval_4 (3 ms)
+[ RUN      ] Collatz.print
+[       OK ] Collatz.print (17 ms)
+[ RUN      ] Collatz.solve
+[       OK ] Collatz.solve (10 ms)
+[----------] 7 tests from Collatz (88 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran. (132 ms total)
+[  PASSED  ] 7 tests.
+==14225==
+==14225== HEAP SUMMARY:
+==14225==     in use at exit: 0 bytes in 0 blocks
+==14225==   total heap usage: 495 allocs, 495 frees, 70,302 bytes allocated
+==14225==
+==14225== All heap blocks were freed -- no leaks are possible
+==14225==
+==14225== For counts of detected and suppressed errors, rerun with: -v
+==14225== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+File 'Collatz.c++'
+Lines executed:100.00% of 17
+Branches executed:100.00% of 18
+Taken at least once:61.11% of 18
+Calls executed:89.47% of 19
+Creating 'Collatz.c++.gcov'
+
+File '/usr/include/c++/4.7/iostream'
+Lines executed:100.00% of 1
+No branches
+Calls executed:100.00% of 2
+Creating 'iostream.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_ios.h'
+Lines executed:0.00% of 4
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 1
+Creating 'basic_ios.h.gcov'
+
+File '/usr/include/c++/4.7/ostream'
+No executable lines
+No branches
+No calls
+Removing 'ostream.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_pair.h'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+Calls executed:100.00% of 10
+Creating 'stl_pair.h.gcov'
+
+File '/usr/include/c++/4.7/bits/move.h'
+Lines executed:100.00% of 2
+No branches
+No calls
+Creating 'move.h.gcov'
+
+File '/usr/include/c++/4.7/bits/locale_facets.h'
+Lines executed:0.00% of 5
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 2
+Creating 'locale_facets.h.gcov'
+
+File '/usr/include/c++/4.7/bits/ios_base.h'
+Lines executed:0.00% of 4
+No branches
+No calls
+Creating 'ios_base.h.gcov'
+
+File '/usr/include/c++/4.7/bits/char_traits.h'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'char_traits.h.gcov'
+
+File 'TestCollatz.c++'
+Lines executed:100.00% of 26
+Branches executed:57.14% of 224
+Taken at least once:28.57% of 224
+Calls executed:54.07% of 209
+Creating 'TestCollatz.c++.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_ios.h'
+Lines executed:0.00% of 4
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 1
+Creating 'basic_ios.h.gcov'
+
+File '/usr/include/c++/4.7/ostream'
+No executable lines
+No branches
+No calls
+Removing 'ostream.gcov'
+
+File '/usr/include/gtest/internal/gtest-port.h'
+Lines executed:23.53% of 17
+Branches executed:7.14% of 28
+Taken at least once:3.57% of 28
+Calls executed:3.85% of 26
+Creating 'gtest-port.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-param-util.h'
+Lines executed:0.00% of 29
+Branches executed:0.00% of 34
+Taken at least once:0.00% of 34
+Calls executed:0.00% of 60
+Creating 'gtest-param-util.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_bvector.h'
+Lines executed:0.00% of 32
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 14
+Creating 'stl_bvector.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-internal.h'
+Lines executed:66.67% of 6
+Branches executed:100.00% of 30
+Taken at least once:50.00% of 30
+Calls executed:62.69% of 67
+Creating 'gtest-internal.h.gcov'
+
+File '/usr/include/c++/4.7/iostream'
+Lines executed:100.00% of 1
+No branches
+Calls executed:100.00% of 2
+Creating 'iostream.gcov'
+
+File '/usr/include/gtest/gtest-printers.h'
+Lines executed:0.00% of 25
+Branches executed:0.00% of 18
+Taken at least once:0.00% of 18
+Calls executed:0.00% of 26
+Creating 'gtest-printers.h.gcov'
+
+File '/usr/include/c++/4.7/ext/new_allocator.h'
+Lines executed:0.00% of 5
+No branches
+Calls executed:0.00% of 1
+Creating 'new_allocator.h.gcov'
+
+File '/usr/include/c++/4.7/bits/allocator.h'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+Creating 'allocator.h.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_string.h'
+Lines executed:28.57% of 7
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:16.67% of 6
+Creating 'basic_string.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_iterator_base_funcs.h'
+Lines executed:0.00% of 4
+No branches
+Calls executed:0.00% of 2
+Creating 'stl_iterator_base_funcs.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_iterator_base_types.h'
+Lines executed:0.00% of 3
+No branches
+No calls
+Creating 'stl_iterator_base_types.h.gcov'
+
+File '/usr/include/c++/4.7/ext/type_traits.h'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'type_traits.h.gcov'
+
+File '/usr/include/c++/4.7/sstream'
+Lines executed:0.00% of 1
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 5
+Creating 'sstream.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_string.tcc'
+Lines executed:0.00% of 16
+Branches executed:0.00% of 16
+Taken at least once:0.00% of 16
+Calls executed:0.00% of 20
+Creating 'basic_string.tcc.gcov'
+
+File '/usr/include/gtest/gtest.h'
+Lines executed:42.86% of 21
+Branches executed:20.00% of 30
+Taken at least once:10.00% of 30
+Calls executed:15.52% of 58
+Creating 'gtest.h.gcov'
+
+File '/usr/include/c++/4.7/streambuf'
+No executable lines
+No branches
+No calls
+Removing 'streambuf.gcov'
+
+File '/usr/include/c++/4.7/istream'
+No executable lines
+No branches
+No calls
+Removing 'istream.gcov'
+
+File '/usr/include/c++/4.7/iomanip'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'iomanip.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_pair.h'
+Lines executed:0.00% of 4
+No branches
+Calls executed:0.00% of 5
+Creating 'stl_pair.h.gcov'
+
+File '/usr/include/c++/4.7/bits/move.h'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'move.h.gcov'
+
+File '/usr/include/gtest/gtest-message.h'
+Lines executed:0.00% of 4
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 12
+Creating 'gtest-message.h.gcov'
+
+File '/usr/include/gtest/gtest-test-part.h'
+Lines executed:0.00% of 1
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 3
+Creating 'gtest-test-part.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-death-test-internal.h'
+Lines executed:0.00% of 2
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 6
+Creating 'gtest-death-test-internal.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-string.h'
+Lines executed:9.09% of 11
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:20.00% of 5
+Creating 'gtest-string.h.gcov'
+
+File '/usr/include/c++/4.7/typeinfo'
+Lines executed:0.00% of 3
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+Creating 'typeinfo.gcov'
+
+File '/usr/include/c++/4.7/bits/locale_facets.h'
+Lines executed:0.00% of 5
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 2
+Creating 'locale_facets.h.gcov'
+
+File '/usr/include/c++/4.7/bits/ios_base.h'
+Lines executed:0.00% of 10
+No branches
+No calls
+Creating 'ios_base.h.gcov'
+
+File '/usr/include/c++/4.7/ext/atomicity.h'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 3
+Creating 'atomicity.h.gcov'
+
+File '/usr/include/x86_64-linux-gnu/c++/4.7/bits/gthr-default.h'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'gthr-default.h.gcov'
+
+File '/usr/include/c++/4.7/bits/char_traits.h'
+Lines executed:0.00% of 6
+No branches
+No calls
+Creating 'char_traits.h.gcov'
