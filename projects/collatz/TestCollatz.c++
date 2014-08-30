@@ -107,6 +107,7 @@ gtest.h
 % gcov-4.7 -b TestCollatz.c++ >> TestCollatz.out
 
 
+
 % cat TestCollatz.out
 ==14225== Memcheck, a memory error detector
 ==14225== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
