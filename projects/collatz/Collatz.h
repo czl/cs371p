@@ -21,7 +21,7 @@
 /**
  * read two ints
  * @param r an std::istream
- * @return a pair of ints, representing the beginning and end of a range, (b, e]
+ * @return a pair of ints, representing the beginning and end of a range, [i, j]
  */
 std::pair<int, int> collatz_read (std::istream& r);
 
@@ -30,10 +30,11 @@ std::pair<int, int> collatz_read (std::istream& r);
 // ------------
 
 /**
- * @param p a pair of ints, representing the beginning and end of a range, (b, e]
- * @return the max cycle length of the range
+ * @param i the beginning of the range, inclusive
+ * @param j the end       of the range, inclusive
+ * @return the max cycle length of the range [i, j]
  */
-int collatz_eval (const std::pair<int, int>& p);
+int collatz_eval (int i, int j);
 
 // -------------
 // collatz_print
@@ -42,10 +43,11 @@ int collatz_eval (const std::pair<int, int>& p);
 /**
  * print three ints
  * @param w an std::ostream
- * @param p a pair of ints, representing the beginning and end of a range, (b, e]
+ * @param i the beginning of the range, inclusive
+ * @param j the end       of the range, inclusive
  * @param v the max cycle length
  */
-void collatz_print (std::ostream&, const std::pair<int, int>&, int);
+void collatz_print (std::ostream& w, int i, int j, int v);
 
 // -------------
 // collatz_solve
@@ -55,6 +57,6 @@ void collatz_print (std::ostream&, const std::pair<int, int>&, int);
  * @param r an std::istream
  * @param w an std::ostream
  */
-void collatz_solve (std::istream&, std::ostream&);
+void collatz_solve (std::istream& r, std::ostream& w);
 
 #endif // Collatz_h

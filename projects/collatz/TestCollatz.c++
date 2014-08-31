@@ -13,7 +13,7 @@
 #include <iostream> // cout, endl
 #include <sstream>  // istringtstream, ostringstream
 #include <string>   // ==
-#include <utility>  // make_pair, pair
+#include <utility>  // pair
 
 #include "gtest/gtest.h"
 
@@ -38,19 +38,19 @@ TEST(Collatz, read) {
 // ----
 
 TEST(Collatz, eval_1) {
-    const int v = collatz_eval(std::make_pair(1, 10));
+    const int v = collatz_eval(1, 10);
     ASSERT_EQ(1, v);}
 
 TEST(Collatz, eval_2) {
-    const int v = collatz_eval(std::make_pair(100, 200));
+    const int v = collatz_eval(100, 200);
     ASSERT_EQ(1, v);}
 
 TEST(Collatz, eval_3) {
-    const int v = collatz_eval(std::make_pair(201, 210));
+    const int v = collatz_eval(201, 210);
     ASSERT_EQ(1, v);}
 
 TEST(Collatz, eval_4) {
-    const int v = collatz_eval(std::make_pair(900, 1000));
+    const int v = collatz_eval(900, 1000);
     ASSERT_EQ(1, v);}
 
 // -----
@@ -59,7 +59,7 @@ TEST(Collatz, eval_4) {
 
 TEST(Collatz, print) {
     std::ostringstream w;
-    collatz_print(w, std::make_pair(1, 10), 20);
+    collatz_print(w, 1, 10, 20);
     ASSERT_EQ("1 10 20\n", w.str());}
 
 // -----
